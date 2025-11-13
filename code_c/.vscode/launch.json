@@ -1,0 +1,16 @@
+{
+    "configurations": [
+    {
+        "name"           : "c-toolkit launch",
+        "type"           : "cppdbg",
+        "request"        : "launch",
+        "program"        : "${workspaceRoot}/build/${workspaceFolderBasename}",
+        "args"           : [],
+        "stopAtEntry"    : false,
+        "cwd"            : "${workspaceRoot}",
+        "environment"    : [],
+        "externalConsole": false,
+        "MIMode"         : "lldb",
+    }
+    ]
+}
