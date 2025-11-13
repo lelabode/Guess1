@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+build/
+*.o
+*.out
+*.a
+*.dSYM/
+hello
+guess1
+numberguess
