@@ -1,3 +1,0 @@
-/Users/lelabode/Desktop/build/CMakeFiles/code_c.dir
-/Users/lelabode/Desktop/build/CMakeFiles/edit_cache.dir
-/Users/lelabode/Desktop/build/CMakeFiles/rebuild_cache.dir
