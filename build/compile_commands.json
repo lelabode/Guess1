@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/lelabode/Desktop/build",
+  "command": "/usr/bin/clang -Wall -Wextra -std=c11 -Wall -Wextra -std=c11 -O0 -g3 -o CMakeFiles/code_c.dir/main.c.o -c /Users/lelabode/Desktop/code_c/main.c",
+  "file": "/Users/lelabode/Desktop/code_c/main.c",
+  "output": "/Users/lelabode/Desktop/build/CMakeFiles/code_c.dir/main.c.o"
+}
+]
