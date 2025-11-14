@@ -1,0 +1,56 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(lldb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.out",
+      "MIMode": "lldb"
+    },
+    {
+      "name": "(lldb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.out",
+      "MIMode": "lldb"
+    },
+
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lelabode/Desktop/my c.file",
+      "program": "/Users/lelabode/Desktop/my c.file/build/Debug/outDebug"
+    }
+  ]
+  {
+    // ===== GitHub Copilot Settings =====
+    "github.copilot.enable": {
+        "*": true,              // Keep Copilot available for all languages
+        "plaintext": false,     // Disable for plain text
+        "markdown": false       // Disable for Markdown notes
+    },
+    "github.copilot.inlineSuggest.enable": false,   // Turn off automatic inline suggestions
+    "editor.inlineSuggest.enabled": false,          // Prevent VS Code from auto-completing inline
+    "github.copilot.suggestionDelay": 500,          // Slight delay to reduce distraction
+    "github.copilot.advanced": {
+        "debug.overrideKeybinding": false
+    },
+
+    // ===== General VS Code Behavior =====
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.acceptSuggestionOnEnter": "off",  // So pressing Enter doesn’t accidentally insert Copilot code
+
+    // Optional: Only show Copilot suggestions manually
+    // Use Alt + \ (Windows/Linux) or Option + \ (Mac)
+    "github.copilot.enableAutoCompletions": false
+}
+
+}
