@@ -1,20 +1,23 @@
 # include <stdio.h>
-void swap(int *a, int *b);
-int main (void){
-  int x = 8;
-  int y =9;
-  printf("x: %d,y: %d\n",x ,y);
-  printf("&x %p\n, &y %p\n",& x,&y);
-  swap(&x,&y);
-  printf("x: %d,y: %d\n",x ,y);
+# include <stdlib.h>
+int main(void){
+  int *a;
+  int length = 0;
+  printf("Enter a length :");
+  scanf("%d",&length);
 
-return 0;
-}
-void swap(int*a,int *b){
-  printf("a %p\n,b %p\n", &a,&b);
-  printf("*a %d\n *b %d\n",*a,*b);
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
+  a = malloc(length * sizeof(*a));
+  if(a==0){
+    printf("malloc failed\n");
+  }
+
+  for (int i = 0; i < length; i ++ )
+     a[i]= i;
+
+   for (int i = 0; i <length; i ++)
+
+
+    printf("a[%d]=%d\n", i, a[i]);
+   free(a);
+  return 0;
 }
