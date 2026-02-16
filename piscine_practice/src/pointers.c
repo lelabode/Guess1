@@ -1,23 +1,32 @@
 # include <stdio.h>
-# include <stdlib.h>
+void add( int x);
+void array_add(int array[]);
+void array_add_ptr(int *array);
 int main(void){
-  int *a;
-  int length = 0;
-  printf("Enter a length :");
-  scanf("%d",&length);
+int a = 5;
+add(a);
+printf("a: %d\n",a);
 
-  a = malloc(length * sizeof(*a));
-  if(a==0){
-    printf("malloc failed\n");
-  }
-
-  for (int i = 0; i < length; i ++ )
-     a[i]= i;
-
-   for (int i = 0; i <length; i ++)
+int myarray[5] = {1,2,3,4,5};
+array_add(myarray);
+array_add_ptr(myarray);
+printf("myarray[4] =%d\n", myarray[4]);
+printf("myarray %p\n",myarray);
 
 
-    printf("a[%d]=%d\n", i, a[i]);
-   free(a);
+
   return 0;
+}
+void array_add_ptr(int *array){
+  printf("array: %p\n",array);
+  array[0]=array[0] +1;
+}
+void array_add(int array[]){
+  printf("array: %p\n",array);
+  array[0]=array[0] +1;
+}
+void add(int x){
+
+  printf("x:%d\n",x);
+  x = x+1;
 }
