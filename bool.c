@@ -15,8 +15,8 @@
     s[len - 1 -i]= temp;
   }
 }*/
-void my_strcmpi(const char *s1,const char *s2){
-  while(*s1 && s2){
+ int my_strcmpi(const char *s1,const char *s2){
+  while(*s1 && *s2){
     char c1 = tolower((unsigned char)*s1);
     char c2 = tolower((unsigned char)*s2);
     if(c1!=c2){

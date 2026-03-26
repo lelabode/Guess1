@@ -16,7 +16,7 @@ int main(){
   Student student2 = {"Marta",22,2.1,true};
   Student student3 = {"Mark", 36, 4.0, false};
   Student student4 = {0};
-  strncpy( student4.name,"Martin",6);
+  strncpy(student4.name,"Martin",6);
   student4.age = 23;
   student4.gpa = 2.4;
   student4.isFullTime = false;
